@@ -1,0 +1,73 @@
+/* andika-regular - latin fonts*/
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Andika';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/andika-v27-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* andika-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Andika';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/andika-v27-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* Fonts */
+:root {
+    --fs-14: calc (14 / 16 * 1rem);
+    --fs-16: calc(16 / 16 * 1rem);
+    
+    --font-size-topnav: var(--fs-14);
+}
+
+/*Colours */
+:root {
+    --c-white: #ffffff;
+    --c-gray-dark: hsl(233, 14%, 25%);
+    --c-purple: hsl(232, 58%, 55%);
+    --c-teal: hsl(180, 100%, 42%);
+    --c-transparent: transparent;
+    --c-magenta: hsl(320, 85%, 41%);
+
+    --color-main-bg: var(--c-white);
+    --color-text-dark: var(--c-gray-dark);
+    --color-text-light: var(--c-white);
+    --color-hero-bg: var(--c-purple);
+    --color-button-primary-bg:var(--c-teal);
+    --color-button-primary-text: var(--c-gray-dark);
+    --color-button-secondary-bg: var(--c-transparent);
+    --color-button-secondary-border: var(--c-white);
+    --color-buttom-secondary-text: var(--c-white);
+    --color-fullwidth-bg: var(var(--c-magenta));
+}
+
+*, *::before,
+ *::after {
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: 'Andika', Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+img, 
+picture,
+svg{
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    width: min(calc(100% - 48px), calc(1200 / 16 * 1rem));
+    margin-inline: auto;
+}
